@@ -18,9 +18,9 @@
 		<!-- Code -->
 		<ePixmap position="50,370" size="128,128" pixmap="aDreamy/icons/frame.png" alphatest="on" zPosition="1" />
 		<widget name="portpic" position="50,370" size="128,128" alphatest="on" zPosition="2" />
-		<widget name="text"   position="120,160" size="630,320" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="text"   position="60,120" size="660,320" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="config" position="50,370" size="690,240" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<widget source="list" render="Listbox" position="190,370" size="545,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
+		<widget source="list" render="Listbox" position="190,390" size="545,270" scrollbarMode="showOnDemand" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (690, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 22)],
@@ -29,7 +29,7 @@
 			</convert>
 		</widget>
 		<!-- Wizard -->
-		<widget name="wizard"     position="50,90" size="103,160" pixmap="aDreamy/menu/wizard.png" alphatest="blend" zPosition="1" />
+		<widget name="wizard"     position="1030,445" size="160,180" pixmap="aDreamy/menu/wizard.png" alphatest="blend" zPosition="1" />
 		<widget name="rc"         position="810,100" size="160,500" pixmap="skin_default/rc.png" alphatest="blend" zPosition="2" />
 		<widget name="arrowdown"  position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
@@ -140,7 +140,7 @@
 		<panel name="p900_Date"/>
 		<!-- Code -->
 		<ePixmap pixmap="icons/info_on.png" position="40,95" size="40,40" zPosition="10" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="50,100" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget source="statusbar" render="Label" position="50,180" size="650,250" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="W005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 

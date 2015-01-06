@@ -2819,7 +2819,7 @@
 	<screen name="HotkeySetup" position="fill" title="Hotkey Setup" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p900_Template" />
 		<panel name="p900_Date"/>
-		<panel name="nR"/>
+		<panel name="nRG"/>
 		<ePixmap position="745,70" size="230,425" pixmap="aDreamy/menu/atemiologo.png" alphatest="blend" zPosition="1" />
 		<ePixmap position="1080,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
 		<eLabel text="Info" position="1030,30" size="140,34" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="#10202020" transparent="1" zPosition="2"/>

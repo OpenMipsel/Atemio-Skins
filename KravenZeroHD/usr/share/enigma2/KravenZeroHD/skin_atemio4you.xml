@@ -48,8 +48,8 @@
     <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="2" />
     <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="1" />
     <eLabel text="OPEN SOURCE" position="600,450" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/atemio" position="600,493" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/oe-alliance" position="600,536" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/atemio/enigma2" position="600,493" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/atemio/oe-atemio-core" position="600,536" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="70,253" size="369,310" font="Regular;20" transparent="1" zPosition="1" />
     <ePixmap pixmap="KravenZeroHD/icons/Logo.png" position="622,126" size="300,280" alphatest="blend" />
     <ePixmap position="70,572" size="70,30" pixmap="KravenZeroHD/buttons/key_info.png" alphatest="blend" />

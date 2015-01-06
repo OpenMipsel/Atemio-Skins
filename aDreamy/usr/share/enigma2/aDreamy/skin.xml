@@ -1,10 +1,15 @@
 <skin>
 	<!--
-	##################### mmark_Dreamy_Atemio v.1.0.0 ########################
+	############################## mmark_aDreamy ############################
 	#                                                                       #
-	#      mmark             Version 1.0.0 released          29-12-2014     #
+	#      mmark           Version 1.0.0 released          06-01-2015       #
 	#                                                                       #
 	#########################################################################
+		The aDreamy skin has been build for Atemio4you STB's by MMARK.
+		This skin is Freeware. Everyone can modify and use it in other images.
+		BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!
+		Do whatever you want with this skin, but don't tell it's yours, 
+		or your idea, and leave the credentials in the "About-box" as they are
 	-->
 	<output id="0">
 		<resolution bpp="32" xres="1280" yres="720" />
@@ -2740,7 +2745,7 @@
 		<panel name="p900_Template" />
 		<panel name="p900_Logo"/>
 		<panel name="p900_Date"/>
-		<panel name="nRGY"/>
+		<panel name="nRGYB"/>
 		<widget name="imageList" position="50,100" size="685,505" font="Regular;20" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S120" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->

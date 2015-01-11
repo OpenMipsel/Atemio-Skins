@@ -2,7 +2,7 @@
 	<!--
 	############################## mmark_aDreamy ############################
 	#                                                                       #
-	#      mmark           Version 1.0.0 released          06-01-2015       #
+	#      mmark           Version 1.0.0 released          11-01-2015       #
 	#                                                                       #
 	#########################################################################
 		The aDreamy skin has been build for Atemio4you STB's by MMARK.
@@ -339,7 +339,7 @@
 		<panel name="M"/>
 		<!-- Date -->
 		<widget source="global.CurrentTime" render="Label" position="830,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Format %A %B %d</convert>
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
 		</widget>
 		<ePixmap position="950,100" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
 		<widget name="description" position="840,280" size="400,310" font="Regular;22" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
@@ -515,13 +515,13 @@
 		<eLabel position="180,660" size="1280,1" backgroundColor="#202020" zPosition="-1" />
 		<!-- ColorButtons -->
 		<ePixmap pixmap="buttons/redpanel.png"    position="40,674"  size="22,22" alphatest="blend"/>
-		<ePixmap pixmap="buttons/greenpanel.png"  position="240,674" size="22,22" alphatest="blend"/>
+		<ePixmap pixmap="buttons/greenpanel.png"  position="230,674" size="22,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/yellowpanel.png" position="450,674"  size="22,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/bluepanel.png"   position="650,674" size="22,22" alphatest="blend"/>
 		<widget name="key_red"    position="70,673"  size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<widget name="key_green"  position="270,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_green"  position="260,673" size="120,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<widget name="key_yellow" position="480,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<widget name="key_blue"   position="680,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_blue"   position="680,673" size="150,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<!-- Teletext icon (is teletext available?) -->
 		<ePixmap pixmap="aDreamy/icons/ico_txt_off.png" position="865,668" size="46,30" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="aDreamy/icons/ico_txt_on.png" position="865,668" size="46,30" zPosition="2" alphatest="blend">
@@ -1941,14 +1941,14 @@
 		<panel name="MI"/>
 		<!-- Date -->
 		<widget source="global.CurrentTime" render="Label" position="840,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Format %A %B %d</convert>
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="50,90" size="0,0" pixmap="aDreamy/border_eventinfo.png" alphatest="on" zPosition="1" />
 		<!-- List Channel --> 
 		<widget name="waitingtext"  position="40,90" size="740,500" font="Regular;22" halign="center" valign="center" zPosition="4" foregroundColor="#73c6ff" backgroundColor="bluette" transparent="1"/>
 		<widget name="chosenletter" position="40,90" size="740,500" font="Regular;22" halign="center" valign="center" zPosition="4" foregroundColor="#73c6ff" backgroundColor="bluette" transparent="1"/>
 		<ePixmap pixmap="box/maxbar.png" position="810,100" size="10,500" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="40,100" size="780,510" scrollbarMode="showOnDemand" itemHeight="30" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<widget name="list" position="40,100" size="760,510" scrollbarMode="showOnDemand" itemHeight="30" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<!-- Name Event --> 
 		<widget source="Service" render="Label" position="840,90" size="400,60" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="2" >
 			<convert type="MovieInfo">RecordServiceName</convert>
@@ -2003,7 +2003,7 @@
 		</widget>
 		<ePixmap position="45,570" size="130,81" pixmap="aDreamy/menu/dmmmedia.png" zPosition="1" alphatest="blend" />
 		<!-- Elapsed time -->
-		<widget source="session.CurrentService" render="Label" position="190,580" size="100,40" font="Regular;34" halign="right" backgroundColor="header" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="140,580" size="150,40" font="Regular;34" halign="right" backgroundColor="header" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<!-- Progressbar (movie position)-->
@@ -2015,7 +2015,7 @@
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<!-- Remaining time -->
-		<widget source="session.CurrentService" render="Label" position="950,580" size="100,40" font="Regular;34" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="950,580" size="150,40" font="Regular;34" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
 			<convert type="ServicePosition">Remaining,Negate</convert>
 		</widget>
 		<eLabel position="0,648" size="1280,1" backgroundColor="#404040" zPosition="5" />
@@ -2455,6 +2455,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Date"/>
 		<panel name="nRGB"/>
+		<panel name="M"/>
 		<ePixmap position="605,70" size="230,425" pixmap="aDreamy/menu/atemiologo.png" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,500" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="50,100" size="560,500" font="Regular;26" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
@@ -2469,7 +2470,7 @@
 		<panel name="M"/>
 		<ePixmap position="950,100" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="840,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Format %A %B %d</convert>
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
 		</widget>
 		<ePixmap position="605,70" size="230,425" pixmap="aDreamy/menu/atemiologo.png" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,496" zPosition="6" alphatest="blend"/>

@@ -3,7 +3,7 @@
 	<!--
 	############################## mmark_aDreamy ############################
 	#                                                                       #
-	#      mmark           Version 1.0.0 released          06-01-2015       #
+	#      mmark           Version 1.0.0 released          11-01-2015       #
 	#                                                                       #
 	#########################################################################
 		The aDreamy skin has been build for Atemio4you STB's by MMARK.
@@ -211,7 +211,7 @@
 		<eLabel position="980,633"  size="265,1"   backgroundColor="#101010"   zPosition="-1" />
 		<eLabel position="980,633"  size="1,65"    backgroundColor="#101010"   zPosition="-1" />
 		<!-- Code -->
-		<widget source="Title" render="Label" position="115,31" size="600,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget source="Title" render="Label" position="115,31" size="800,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<ePixmap position="33,18" size="35,35" pixmap="aDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="50,33" size="45,50" pixmap="aDreamy/icons/list.png"      alphatest="blend" zPosition="2" />
 		<!-- Clock %d.%m.%Y - %H:%M:%S -->
@@ -241,7 +241,7 @@
 	<screen name="p800_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Date -->
 		<widget source="global.CurrentTime" render="Label" position="420,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Date</convert>
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
 		</widget>
 	</screen>
 
@@ -291,7 +291,7 @@
 	<screen name="p900_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Date -->
 		<widget source="global.CurrentTime" render="Label" position="370,31" size="600,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Date</convert>
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
 		</widget>
 	</screen>
 

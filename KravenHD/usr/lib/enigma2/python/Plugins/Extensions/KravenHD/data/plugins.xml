@@ -613,9 +613,9 @@
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
     <ePixmap pixmap="KravenHD/buttons/key_red1.png" position="100,662" size="200,5" alphatest="blend" />
-    <ePixmap pixmap="KravenHD/buttons/key_green1.png" position="390,662" size="200,5" alphatest="blend" />
+    <ePixmap pixmap="KravenHD/buttons/key_yellow1.png" position="680,662" size="200,5" alphatest="blend" />
     <eLabel text="Move" position="105,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="KravenBackground" foregroundColor="white" transparent="1" />
-    <eLabel text="Copy" position="395,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="KravenBackground" foregroundColor="white" transparent="1" />
+    <eLabel text="Copy" position="685,637" size="240,24" zPosition="1" font="RegularLight; 20" halign="left" backgroundColor="KravenBackground" foregroundColor="white" transparent="1" />
     <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
     <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
     <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
@@ -2374,45 +2374,42 @@
 
 <!-- PiconManagerScreen -->
 <screen name="PiconManagerScreen" position="0,0" size="1280,720" title="Picon Manager" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-    <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
-    <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
-    <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="55,695" size="200,5" />
-    <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="295,695" size="200,5" />
-    <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
-    <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
-    <widget backgroundColor="KravenBackground" font="Regular; 34" halign="center" position="1089,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel backgroundColor="KravenBackground" font="Regular; 35" halign="center" position="1133,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="KravenBackground" font="Regular; 34" halign="center" position="1138,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
-    <eLabel backgroundColor="KravenBackground" font="Regular; 25" halign="center" position="1183,29" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="white" />
-    <widget backgroundColor="KravenBackground" font="Regular; 24" halign="center" position="1185,28" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="white">
-      <convert type="ClockToText">Format:%S</convert>
-    </widget>
-    <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="white" halign="left" position="965,30" render="Label" size="125,25" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%d. %B</convert>
-    </widget>
-    <eLabel backgroundColor="KravenBackground" font="Regular; 17" foregroundColor="white" halign="left" noWrap="1" position="956,30" size="10,25" text=", " transparent="1" valign="top" zPosition="5" />
-    <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="white" halign="right" position="830,30" render="Label" size="125,25" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-    <widget source="Title" render="Label" position="60,20" size="650,40" font="Regular; 30" backgroundColor="KravenBackground" transparent="1" foregroundColor="white" valign="top" />
-    <widget name="piconpath" position="40,115" size="690,25" font="Regular;22" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" zPosition="5" halign="left" />
-    <widget name="piconspace" position="40,165" size="690,25" font="Regular;20" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" zPosition="5" halign="left" />
-    <widget name="piconcount" position="40,205" size="690,25" font="Regular;20" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" zPosition="5" halign="left" />
-    <widget name="picondownload" position="40,245" size="690,25" font="Regular;20" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" zPosition="5" halign="left" />
-    <widget name="piconerror" position="40,285" size="690,25" font="Regular;20" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" zPosition="5" halign="left" />
-    <widget name="piconslidername" position="480,325" size="0,0" font="Regular;20" foregroundColor="white" transparent="1" zPosition="5" halign="left" />
-    <widget name="piconslider" position="20,90" size="760,250" zPosition="1" foregroundColor="KravenBackground" transparent="1" />
-    <widget name="picon" position="825,95" size="400,240" zPosition="4" transparent="1" alphatest="blend" />
-    <widget name="list" position="20,360" size="1240,250" zPosition="1" foregroundColor="white" backgroundColor="KravenBackground" foregroundColorSelected="white" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1" transparent="1" />
-    <widget name="key_red" position="60,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
-    <widget name="key_green" position="300,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
-    <widget name="key_yellow" position="540,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
-    <widget name="key_blue" position="785,670" size="220,24" zPosition="0" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
+  <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+  <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />
+  <ePixmap position="0,555" size="1280,170" zPosition="-9" pixmap="KravenHD/infobar/ibar.png" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_updown.png" position="1190,670" size="50,24" transparent="0" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/info.png" position="1120,670" size="50,24" transparent="1" zPosition="10" />
+  <!-- /*Uhr-->
+  <widget source="global.CurrentTime" render="Label" position="1119,9" size="100,28" font="Regular;26" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="869,39" size="350,25" font="RegularLight; 20" halign="right" backgroundColor="KravenBackground" transparent="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <!--Uhr */-->
+  <eLabel backgroundColor="BackgroundKraven" font="Regular; 30" position="40,20" size="650,35" text="Picon Manager" transparent="1" foregroundColor="white" valign="top" />
+  <widget name="piconpath" position="60,85" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconpath2" position="290,85" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconspace" position="60,115" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconcount" position="60,145" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="picondownload" position="60,175" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconerror" position="60,205" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconslidername" position="60,240" size="690,60" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="piconslider" position="290,245" size="375,10" backgroundColor="BackgroundKraven" foregroundColor="green" zPosition="2" transparent="0" />
+  <widget name="selectedname" position="60,275" size="690,40" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="selected" position="290,275" size="690,40" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="spiconname" position="60,305" size="690,40" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="spicon" position="290,305" size="690,40" font="Regular;20" foregroundColor="white" transparent="1" zPosition="1" halign="left" />
+  <widget name="picon" position="766,85" size="400,240" zPosition="4" transparent="1" borderWidth="0" borderColor="black" alphatest="blend" />
+  <widget name="list" position="100,360" size="1070,272" zPosition="1" foregroundColor="white" foregroundColorSelected="#white" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1" transparent="1" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_red1.png" position="55,695" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_green1.png" position="295,695" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_yellow1.png" position="535,695" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="KravenHD/buttons/key_blue1.png" position="780,695" size="200,5" />
+  <widget name="key_red" position="60,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="BackgroundKraven" transparent="1" />
+  <widget name="key_green" position="300,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="BackgroundKraven" transparent="1" />
+  <widget name="key_yellow" position="540,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="BackgroundKraven" transparent="1" />
+  <widget name="key_blue" position="785,670" size="220,24" zPosition="0" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="BackgroundKraven" transparent="1" />
 </screen>
 
 <!-- PiconManagerFolderScreen -->
@@ -2440,7 +2437,7 @@
     <widget backgroundColor="KravenBackground" font="Regular; 16" foregroundColor="white" halign="right" position="830,30" render="Label" size="125,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="Title" render="Label" position="60,20" size="650,35" font="Regular; 30" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" valign="top" />
+    <widget source="Title" render="Label" position="40,20" size="650,35" font="Regular; 30" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" valign="top" />
     <widget name="media" position="20,105" size="540,30" valign="top" font="Regular;22" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />
     <widget name="folderlist" position="20,165" size="700,450" itemHeight="30" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1" enableWrapAround="1" backgroundColor="KravenBackground" transparent="1" />
     <widget source="key_red" render="Label" position="60,670" size="220,24" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="KravenBackground" transparent="1" />

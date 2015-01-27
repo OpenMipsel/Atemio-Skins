@@ -118,11 +118,11 @@
     <convert type="KravenRemainingToText">InMinutes</convert>
   </widget>
   <ePixmap pixmap="KravenHD/icons/aufloesung.png" position="545,690" size="112,22" zPosition="1" alphatest="blend" />
-<widget source="session.CurrentService" render="Label" position="664,688" size="89,22" backgroundColor="KravenBackground" transparent="1" zPosition="3" foregroundColor="Kraven" font="Regular; 19" valign="center" halign="left">
-  <convert type="KravenExtraInfo">OrbitalPositionOrTunerSystem</convert>
-</widget>
-<ePixmap pixmap="KravenHD/icons/aufloesung2.png" position="662,690" size="116,22" zPosition="1" alphatest="blend" />
-<widget source="session.FrontendStatus" render="Label" position="724,688" size="50,21" font="Regular; 19" transparent="1" foregroundColor="Kraven" backgroundColor="KravenBackground" zPosition="3" halign="right" valign="center" name=",">
+  <widget source="session.CurrentService" render="Label" position="664,688" size="89,22" backgroundColor="KravenBackground" transparent="1" zPosition="3" foregroundColor="Kraven" font="Regular; 19" valign="center" halign="left">
+    <convert type="KravenExtraInfo">OrbitalPositionOrTunerSystem</convert>
+  </widget>
+  <ePixmap pixmap="KravenHD/icons/aufloesung2.png" position="662,690" size="116,22" zPosition="1" alphatest="blend" />
+  <widget source="session.FrontendStatus" render="Label" position="724,688" size="50,21" font="Regular; 19" transparent="1" foregroundColor="Kraven" backgroundColor="KravenBackground" zPosition="3" halign="right" valign="center">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
 <!-- /* InfoBar ZZ1 -->

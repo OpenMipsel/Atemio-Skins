@@ -73,9 +73,7 @@ config.plugins.KravenHD.Image = ConfigSelection(default="main-custom-openatv", c
 				("main-custom-atemio4you", _("Atemio4You")),
 				("main-custom-hdmu", _("HDMU")),
 				("main-custom-openatv", _("openATV")),
-				("main-custom-openhdf", _("openHDF")),	
-				("main-custom-openmips", _("openMips")),
-				("main-custom-sonstige", _("Sonstige"))
+				("main-custom-openhdf", _("openHDF"))
 				])
 
 				#Color
@@ -270,8 +268,7 @@ config.plugins.KravenHD.NumberZapExtStyle = ConfigSelection(default="numberzapex
 				("numberzapext-zzzpicon", _("ZZZPicons"))
 				])
 				
-config.plugins.KravenHD.CoolTVGuide = ConfigSelection(default="cooltv-none", choices = [
-				("cooltv-none", _("Original")),
+config.plugins.KravenHD.CoolTVGuide = ConfigSelection(default="cooltv-minitv", choices = [
 				("cooltv-minitv", _("MiniTV")),
 				("cooltv-picon", _("Picon"))
 				])
@@ -285,7 +282,10 @@ config.plugins.KravenHD.ChannelSelectionStyle = ConfigSelection(default="channel
 				("channelselection-style-nobile", _("Nobile")),
 				("channelselection-style-nobile2", _("Nobile 2")),
 				("channelselection-style-nobile-minitv", _("Nobile MiniTV")),
-				("channelselection-style-minitv", _("MiniTV"))
+				("channelselection-style-minitv", _("MiniTV")),
+				("channelselection-style-minitv2", _("MiniTV/PIP")),
+				("channelselection-style-minitv22", _("MiniTV/PIP 2")),
+				("channelselection-style-minitv3", _("PIP"))
 				])
 				
 config.plugins.KravenHD.EMCStyle = ConfigSelection(default="emc-nocover", choices = [
@@ -356,13 +356,20 @@ config.plugins.KravenHD.InfobarSystemInfo = ConfigSelection(default="infobar-sys
 				])
 				
 config.plugins.KravenHD.InfobarECMInfo = ConfigSelection(default="infobar-ecminfo-none", choices = [
-				("infobar-ecminfo-z1", _("for Z1+Z2 Infobar")),
-				("infobar-ecminfo-x1", _("for X1 Infobar")),
-				("infobar-ecminfo-x2", _("for X2+X3 Infobar")),	
-				("infobar-ecminfo-zz1", _("for ZZ1 Infobar")),
-				("infobar-ecminfo-zz2", _("for ZZ2+ZZ3 Infobar")),
-				("infobar-ecminfo-zz4", _("for ZZ4 Infobar")),
-				("infobar-ecminfo-zzz1", _("for ZZZ1 Infobar")),
+				("infobar-ecminfo-small-z1", _("Small for Z1+Z2 Infobar")),
+				("infobar-ecminfo-z1", _("Big for Z1+Z2 Infobar")),
+				("infobar-ecminfo-small-x1", _("Small for X1 Infobar")),
+				("infobar-ecminfo-x1", _("Big for X1 Infobar")),
+				("infobar-ecminfo-small-x2", _("Small for X2+X3 Infobar")),
+				("infobar-ecminfo-x2", _("Big for X2+X3 Infobar")),	
+				("infobar-ecminfo-small-zz1", _("Small for ZZ1 Infobar")),
+				("infobar-ecminfo-zz1", _("Big for ZZ1 Infobar")),
+				("infobar-ecminfo-small-zz2", _("Small for ZZ2+ZZ3 Infobar")),
+				("infobar-ecminfo-zz2", _("Big for ZZ2+ZZ3 Infobar")),
+				("infobar-ecminfo-small-zz4", _("Small for ZZ4 Infobar")),
+				("infobar-ecminfo-zz4", _("Big for ZZ4 Infobar")),
+				("infobar-ecminfo-small-zzz1", _("Small for ZZZ1 Infobar")),
+				("infobar-ecminfo-zzz1", _("Big for ZZZ1 Infobar")),
 				("infobar-ecminfo-none", _("Off"))				
                 ])
 #######################################################################
@@ -375,7 +382,7 @@ class KravenHD(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="foreground" backgroundColor="KravenPreBlack2" halign="left" position="643,667" size="250,24" text="Reboot" transparent="1" />
   <widget name="config" position="29,14" scrollbarMode="showOnDemand" size="590,632" transparent="1" />
   <eLabel position="738,15" size="349,43" text="KravenHD" font="Regular; 35" valign="center" halign="center" transparent="1" backgroundColor="KravenPreBlack2" />
-  <eLabel position="738,58" size="349,43" text="Version: 5.4.9.4" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
+  <eLabel position="738,58" size="349,43" text="Version: 5.4.9.5" foregroundColor="foreground" font="Regular; 35" valign="center" backgroundColor="KravenPreBlack2" transparent="1" halign="center" />
   <widget name="helperimage" position="635,173" size="550,309" zPosition="1" backgroundColor="KravenPreBlack2" />
   <eLabel backgroundColor="BackgroundKraven" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   <ePixmap position="0,0" size="1280,149" zPosition="-9" pixmap="KravenHD/infobar/ibaro.png" alphatest="blend" />

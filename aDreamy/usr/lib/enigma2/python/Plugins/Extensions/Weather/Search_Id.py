@@ -62,8 +62,8 @@ class WeatherList(Screen):
             self.skin = f.read()
             f.close()			
         Screen.__init__(self, session)	
-        self["Key_Red"] = Label(_("Exit"))		
-        self["Key_Green"] = Label(_("Save")) 		
+        self["key_red"] = Label(_("Exit"))		
+        self["key_green"] = Label(_("Save")) 		
         self.Location =  Location		
         self.List = []		
         self["myMenu"] = MenuList(self.List)	
